@@ -1,0 +1,33 @@
+{
+    "name": "chatgpt-electron",
+    "version": "1.0.0",
+    "main": "main.js",
+    "scripts": {
+      "start": "electron .",
+      "pack": "electron-builder --dir",
+      "dist": "electron-builder"
+    },
+    "devDependencies": {
+      "electron": "^25.0.0",
+      "electron-builder": "^25.0.0"
+    },
+    "build": {
+      "appId": "com.chatgpt.electron",
+      "productName": "ChatGPT Electron",
+      "files": [
+        "main.js",
+        "assets/**/*",
+        "node_modules/**/*"
+      ],
+      "directories": {
+        "output": "dist"
+      },
+      "win": {
+        "icon": "assets/image.ico" 
+      },
+      "linux": {
+        "icon": "assets/image.png" 
+      }
+    }
+  }
+  
